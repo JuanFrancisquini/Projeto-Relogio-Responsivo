@@ -1,27 +1,36 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
+    div#iimg564{display: none;}
+    main{width: 280px;}
+    div.tempohp{display: block;}
+}
+
+@media screen and (min-width: 410px) and (max-width: 767.9px) {
     div#iimg564{
         display: none;
     }
-    main{
-        width: 280px;
-    }
-}
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
-    div#iimg564{
-        display: none;
-    }
     main{
         max-width: 60vw;
     }
+
+    div.tempohg{display: block;}
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 991px){
+    div#noticia{
+        display: block;
+    }
+
+    div.tempov{
+        display: block;
+    }
+
     main{
-        max-width: 60vw;
+        max-width: 50vw;
         height: 436px;
+        top: 50%;
     }
 
     div#iimg{
@@ -38,10 +47,11 @@
         width: 564px;
         height: 564px;
         border-radius: 20px;
+        overflow: hidden;
     }
 
     h1{
-        padding-top: 35px;
+        top: 7%;
     }
 
     h3#isaud{
@@ -53,4 +63,52 @@
         top: 87%;
         font-size: 1.5em;
     }
+}
+
+@media screen and (min-width: 992px) {
+    div.noticia{
+        display: block;
+    }
+
+    div.tempovgg{
+        display: block;
+    }
+
+    main{
+        max-width: 50vw;
+        height: 436px;
+        top: 50%;
+    }
+
+    div#iimg{
+        display: none;
+    }
+
+    div#iimg564{
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+
+    div#iimg564:hover{
+        width: 564px;
+        height: 564px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    h1{
+        top: 7%;
+    }
+
+    h3#isaud{
+        padding-top: 20px;
+        font-size: 1.5em;
+    }
+
+    h3#ihora{
+        top: 87%;
+        font-size: 1.5em;
+    }
+    
 }

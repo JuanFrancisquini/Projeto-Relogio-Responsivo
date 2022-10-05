@@ -11,53 +11,64 @@
 <body id="fundo">
     <h1 id="idata">Aqui vai o dia</h1>
     <main>
-        <h3 id="isaud">nome</h3>
+        <h3 id="isaud">Saudação</h3>
         <h3 id="ihora">Aqui vão as horas</h3>
         <div id="iimg"></div>
         <div id="iimg564"></div>
     </main>
+
+    <div class="tempov" id="cont_97fabe2dab8cb0e617ab8d02e370a752"><script type="text/javascript" async src="https://www.tempo.com/wid_loader/97fabe2dab8cb0e617ab8d02e370a752"></script></div>
+
+    <div class="tempohp" id="cont_ba4a90856fc04cb97712c18dda439659"><script type="text/javascript" async src="https://www.tempo.com/wid_loader/ba4a90856fc04cb97712c18dda439659"></script></div>
+
+    <div class="tempohg" id="cont_07646c0531774570657e5e1284d2b5e3"><script type="text/javascript" async src="https://www.tempo.com/wid_loader/07646c0531774570657e5e1284d2b5e3"></script></div>
+
+    <div class="tempovgg" id="cont_2293bc70cfc8b5aac5686838427e99b7"><script type="text/javascript" async src="https://www.tempo.com/wid_loader/2293bc70cfc8b5aac5686838427e99b7"></script></div>
+    
+    <div class="noticia">
+        <iframe frameborder="0" src="https://universovisual.com.br/secao/widget/widget_carrossel.aspx" scrolling="no"></iframe>
+    </div>
+
     <footer><a href="https://github.com/MazzAlpha?tab=repositories" target="_blank" rel="external">@MazzAlpha</a></footer>
 
     <script>
-        var nome = window.prompt('Digite Seu Nome: ').toUpperCase()
+        var nome = 'Juan' //window.prompt('Digite Seu Nome: ').toUpperCase()
+
         var data = new Date()
-        var dia = ("0" + data.getDay()).slice(-2)
-        var mes = ("0" + data.getMonth()).slice(-2)
-        var ano = data.getFullYear()
+        var dia = ("0" + data.getUTCDate()).slice(-2)
+        var mes = ("0" + (data.getUTCMonth() + 1)).slice(-2)
+        var ano = data.getUTCFullYear()
         var hora = ("0" + data.getHours()).slice(-2)
         var minutos = ("0" + data.getMinutes()).slice(-2)
-        var seg = ("0" + data.getSeconds()).slice(-2)
+        var seg = ("0" + data.getUTCSeconds()).slice(-2)
+
         var hoje = document.querySelector('h1#idata')
         var fundo = document.querySelector('body#fundo')
-
         var hr = document.querySelector('h3#ihora')
         var saud = document.querySelector('h3#isaud')
         var foto = document.querySelector('div#iimg')
         var foto564 = document.querySelector('div#iimg564')
 
         hoje.innerHTML = `${dia} / ${mes} / ${ano}`
+        hr.innerHTML = `<p>Agora são  ${hora} : ${minutos} : ${seg}</p>`
 
         if (hora <= 23 && hora >= 19){
             saud.innerHTML = `Boa noite ${nome} !`
-            hr.innerHTML = `<p>Agora são  ${hora} : ${minutos} : ${seg}</p>`
             foto.style.background = "url(imagens/noite-300.jpg) top center"
             foto564.style.background = "url(imagens/noite-564.jpg) top center"
             fundo.style.background = "linear-gradient(to bottom, #000031, black)"
         } else if (hora < 18 && hora >= 16){
             saud.innerHTML = `Boa tarde ${nome} !`
-            hr.innerHTML = `<p>Agora são  ${hora} : ${minutos} : ${seg}</p>`
             foto.style.background = "url(imagens/tarde-300.jpg) top center"
             foto564.style.background = "url(imagens/tarde-564.jpg) center center"
             fundo.style.background = "linear-gradient(to bottom, #000051, rgb(152, 99, 0)"
         } else if (hora < 16 && hora > 07){
             saud.innerHTML = `Boa dia ${nome} !`
-            hr.innerHTML = `<p>Agora são  ${hora} : ${minutos} : ${seg}</p>`
             foto.style.background = "url(imagens/dia-300.jpg) top center"
             foto564.style.background = "url(imagens/dia-564.jpg) center center"
             fundo.style.background = "linear-gradient(-12deg, #ffe817, #000072 80%)"
         } else{
             saud.innerHTML = `Boa Madrugada ${nome} !`
-            hr.innerHTML = `<p>Agora são  ${hora} : ${minutos} : ${seg}</p>`
             foto.style.background = "url(imagens/madrugada-300.jpg) top center"
             foto564.style.background = "url(imagens/madrugada-564.jpg) top center"
             fundo.style.background = "linear-gradient(15deg, #ff3700 10%, orange 40%, #004146 65%)"

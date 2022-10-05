@@ -13,24 +13,99 @@ body{
     width: 100vw;
 }
 
+div.noticia{
+    display: none;
+}
+
+div.noticia > iframe{
+    display: block;
+    border-radius: 20px;
+    position: absolute;
+    width: 160px;
+    height: 400px;
+    left: 89%;
+    top: 50%;
+    transition-duration: 2s;
+    transform: translate(-50%, -50%);
+}
+
+div.tempov{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    transition-duration: 2s;
+    transform: translate(-50%, -50%);
+}
+
+div.tempohg{
+    display: none;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.475);
+}
+
+div.tempovgg{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    transition-duration: 2s;
+    transform: translate(-50%, -50%);
+}
+
+div.tempohp{
+    display: none;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.475);
+}
+
 h1{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 15px;
+    position: absolute;
+    width: max-content;
     color: white;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.516);
+    font-size: 2.2em;
+    left: 50%;
+    top: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.717);
+    transform: translate(-50%, -50%);
 }
 
 main{
     max-width: 450px;
     height: 280px;
-    background: rgba(255, 255, 255, 0.779);
+    background: white;
     position: relative;
-    margin: auto;
+    top: 40%;
+    left: 50%;
     padding: 10px;
     border-radius: 20px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.365);
     box-shadow: inset 0px 0px 15px black;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 h3#isaud{
