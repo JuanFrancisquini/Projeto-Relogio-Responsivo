@@ -11,19 +11,18 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(15deg, #ff3700 10%, orange 40%, #004146 65%);
 }
 
 h1{
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     color: white;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.516);
 }
 
 main{
-    max-width: 400px;
+    max-width: 450px;
     height: 280px;
     background: rgba(255, 255, 255, 0.779);
     position: relative;
@@ -41,7 +40,6 @@ h3#isaud{
 }
 
 h3#ihora{
-    
     position: absolute;
     margin: auto;
     width: max-content;
@@ -53,7 +51,6 @@ h3#ihora{
 
 div#iimg{
     position: absolute;
-    background-repeat: no-repeat;
     width: 200px;
     height: 200px;
     margin: auto;
@@ -65,6 +62,25 @@ div#iimg{
     transition-duration: 2s;
 }
 div#iimg:hover{
+    width: 300px;
+    height: 300px;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+div#iimg564{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.409);
+    transition-duration: 2s;
+}
+div#iimg564:hover{
     width: 300px;
     height: 300px;
     transition-duration: 2s;

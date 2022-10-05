@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 400px) {
+    div#iimg564{
+        display: none;
+    }
+    main{
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    div#iimg564{
+        display: none;
+    }
+    main{
+        max-width: 60vw;
+    }
+}
+
+@media screen and (min-width: 768px){
+    main{
+        max-width: 60vw;
+        height: 436px;
+    }
+
+    div#iimg{
+        display: none;
+    }
+
+    div#iimg564{
+        display: block;
+        width: 300px;
+        height: 300px;
+    }
+
+    div#iimg564:hover{
+        width: 564px;
+        height: 564px;
+        border-radius: 20px;
+    }
+
+    h1{
+        padding-top: 35px;
+    }
+
+    h3#isaud{
+        padding-top: 20px;
+        font-size: 1.5em;
+    }
+
+    h3#ihora{
+        top: 87%;
+        font-size: 1.5em;
+    }
+}
