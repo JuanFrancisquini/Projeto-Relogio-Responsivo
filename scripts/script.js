@@ -16,7 +16,7 @@ function sethour(){
 }
 sethour()
 
-var nome = 'Juan' //window.prompt('Digite Seu Nome: ').toUpperCase()
+var nome = window.prompt('Digite Seu Nome: ').toUpperCase()
 var data = new Date()
 var hora = ("0" + data.getHours()).slice(-2)
 var dia = ("0" + data.getUTCDate()).slice(-2)
