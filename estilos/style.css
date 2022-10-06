@@ -74,7 +74,7 @@ div.tempohg{
 div.tempohp{
     display: none;
     position: absolute;
-    top: 78%;
+    top: 76%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
