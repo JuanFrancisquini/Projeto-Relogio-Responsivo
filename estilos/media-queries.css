@@ -12,6 +12,10 @@
     main{
         height: 300px;
     }
+
+    h1{
+        top: 18%;
+    }
 }
 
 @media screen and (min-width: 450px) and (max-width: 767.9px) {
