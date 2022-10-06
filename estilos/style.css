@@ -11,6 +11,7 @@
 body{
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
 
 div.noticia{
@@ -42,19 +43,6 @@ div.tempov{
     transform: translate(-50%, -50%);
 }
 
-div.tempohg{
-    display: none;
-    position: absolute;
-    top: 82%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
-    overflow: hidden;
-    border: 0px;
-    padding: 0px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.475);
-}
-
 div.tempovgg{
     display: none;
     position: absolute;
@@ -66,6 +54,19 @@ div.tempovgg{
     padding: 0px;
     transition-duration: 2s;
     transform: translate(-50%, -50%);
+}
+
+div.tempohg{
+    display: none;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px;
+    padding: 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.475);
 }
 
 div.tempohp{

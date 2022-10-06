@@ -40,7 +40,17 @@
     }
 
     h1{
-        top: 12%;
+        display: none;
+    }
+
+    div.noticia{
+        display: block;
+    }
+
+    div.noticia > iframe{
+        width: 120px;
+        height: 350px;
+        
     }
 
     h3#isaud{
