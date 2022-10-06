@@ -93,7 +93,7 @@ h1{
 }
 
 main{
-    max-width: 450px;
+    max-width: 80vw;
     height: 280px;
     background: white;
     position: relative;
@@ -122,6 +122,10 @@ h3#ihora{
     top: 86%;
     left: 50%;
     transform: translate(-50%);
+}
+
+h3#ihora > div{
+    display: inline-block;
 }
 
 div#iimg{

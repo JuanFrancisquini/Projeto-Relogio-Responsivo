@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 449px) {
     div#iimg564{display: none;}
-    main{width: 280px;}
     div.tempohp{display: block;}
 }
 
-@media screen and (min-width: 410px) and (max-width: 767.9px) {
+@media screen and (min-width: 450px) and (max-width: 767.9px) {
     div#iimg564{
         display: none;
     }

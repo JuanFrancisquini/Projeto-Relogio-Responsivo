@@ -7,12 +7,13 @@
     <title>Relógio</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body id="fundo">
     <h1 id="idata">Aqui vai o dia</h1>
     <main>
         <h3 id="isaud">Saudação</h3>
-        <h3 id="ihora">Aqui vão as horas</h3>
+        <h3 id="ihora">Agora são: <div id="hora">hora</div> : <div id="minutos">minutos</div> : <div id="seg">segundos</div></h3>
         <div id="iimg"></div>
         <div id="iimg564"></div>
     </main>
@@ -30,54 +31,5 @@
     </div>
 
     <footer><a href="https://github.com/MazzAlpha?tab=repositories" target="_blank" rel="external">@MazzAlpha</a></footer>
-
-    <script>
-        var nome = window.prompt('Digite Seu Nome: ').toUpperCase()
-
-        var data = new Date()
-        var dia = ("0" + data.getUTCDate()).slice(-2)
-        var mes = ("0" + (data.getUTCMonth() + 1)).slice(-2)
-        var ano = data.getUTCFullYear()
-        var hora = ("0" + data.getHours()).slice(-2)
-        var minutos = ("0" + data.getMinutes()).slice(-2)
-        var seg = ("0" + data.getUTCSeconds()).slice(-2)
-
-        var hoje = document.querySelector('h1#idata')
-        var fundo = document.querySelector('body#fundo')
-        var hr = document.querySelector('h3#ihora')
-        var saud = document.querySelector('h3#isaud')
-        var foto = document.querySelector('div#iimg')
-        var foto564 = document.querySelector('div#iimg564')
-
-        hoje.innerHTML = `${dia} / ${mes} / ${ano}`
-        hr.innerHTML = `<p>Agora são  ${hora} : ${minutos} : ${seg}</p>`
-
-        if (hora <= 23 && hora >= 19){
-            saud.innerHTML = `Boa noite ${nome} !`
-            foto.style.background = "url(imagens/noite-300.jpg) top center"
-            foto564.style.background = "url(imagens/noite-564.jpg) top center"
-            fundo.style.background = "linear-gradient(to bottom, #000031, black)"
-        } else if (hora < 18 && hora >= 16){
-            saud.innerHTML = `Bom final de tarde ${nome} !`
-            foto.style.background = "url(imagens/tarde-300.jpg) top center"
-            foto564.style.background = "url(imagens/tarde-564.jpg) center center"
-            fundo.style.background = "linear-gradient(to bottom, #000051, rgb(152, 99, 0)"
-        } else if (hora < 16 && hora > 12){
-            saud.innerHTML = `Boa tarde ${nome} !`
-            foto.style.background = "url(imagens/dia-300.jpg) top center"
-            foto564.style.background = "url(imagens/dia-564.jpg) center center"
-            fundo.style.background = "linear-gradient(-12deg, #ffe817, #000072 80%)"
-        }else if (hora < 12 && hora > 07){
-            saud.innerHTML = `Boa dia ${nome} !`
-            foto.style.background = "url(imagens/dia-300.jpg) top center"
-            foto564.style.background = "url(imagens/dia-564.jpg) center center"
-            fundo.style.background = "linear-gradient(-12deg, #ffe817, #000072 80%)"
-        }else {
-            saud.innerHTML = `Boa Madrugada ${nome} !`
-            foto.style.background = "url(imagens/madrugada-300.jpg) top center"
-            foto564.style.background = "url(imagens/madrugada-564.jpg) top center"
-            fundo.style.background = "linear-gradient(15deg, #ff3700 10%, orange 40%, #004146 65%)"
-        }
-    </script>
 </body>
 </html>
