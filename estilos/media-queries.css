@@ -17,7 +17,7 @@
     div.tempohg{display: block;}
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 820px) and (max-width: 991px){
     div#noticia{
         display: block;
     }
@@ -109,5 +109,4 @@
         top: 87%;
         font-size: 1.5em;
     }
-    
 }
